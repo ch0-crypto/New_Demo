@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Comforter&family=Corinthia:wght@700&family=Dancing+Script&family=EB+Garamond:ital,wght@1,500&family=Gwendolyn:wght@700&family=Indie+Flower&family=Lobster&family=Meow+Script&family=Quicksand:wght@300&family=Raleway:wght@100;200&family=Roboto:ital,wght@0,100;0,300;1,100&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Comforter&family=Corinthia:wght@700&family=Dancing+Script&family=EB+Garamond:ital,wght@1,500&family=Gwendolyn:wght@700&family=Indie+Flower&family=Lato:wght@300&family=Lobster&family=Luxurious+Roman&family=Meow+Script&family=Quicksand:wght@300&family=Raleway:wght@100;200&family=Roboto:ital,wght@0,100;0,300;1,100&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "raleway";
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+header h1 {
+  font-family: "lato";
+}
+
+.showcase-main h1 {
+  font-size: 3rem;
+}
+
+header .showcase-nav {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .showcase-nav ul {
+  display: flex;
+}
+
+.showcase-nav li {
+  padding: 0 2.7rem;
+  list-style: none;
+}
+
+.showcase-nav li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.showcase-nav li a:hover {
+  color: #868e96;
+  transition: all 0.5s ease-in;
+}
+
+header #showcase-area {
+  position: relative;
+  background: url(../img/showcase\ page.jpg) no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#showcase-area * {
+  z-index: 10;
+}
+
+header #showcase-area .social {
+  margin-left: 76rem;
+  margin-top: 3rem;
+  position: absolute;
+}
+
+.social i {
+  color: #868e96;
+}
+.socials i:hover {
+  background: #868e96;
+}
+
+header .showcase-main {
+  margin-top: 7rem;
+  margin-left: 6rem;
+  position: absolute;
+  line-height: 1.2;
+}
+
+header .info-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  position: inherit;
+  margin-top: 22.4rem;
+  background: white;
+  color: #333;
+  line-height: 1.8;
+  padding: 2rem;
+  margin-right: 17rem;
+  text-align: left;
+  /* box-shadow: 0 0 32px rgba(0, 0, 0, 0.3); */
+}
+header .info-box h3 {
+  font-size: 1rem;
+}
+
+section #about-box {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#about-box .about-box1 h2 {
+  font-family: "lato";
+  font-size: 2rem;
+}
+
+#about-box .about-box2 {
+  color: black;
+}
+#about-box .about-box2 p {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+section .p-box {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 36rem;
+  margin-top: -4rem;
+  padding: 3rem;
+}
+
+.p-box2:last-child {
+  font-weight: bolder;
+}
+
+/* main gallery */
+
+main .gallery-header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .show-gallery img {
+  width: 100%;
+}
+main .show-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* gallery cars */
+main .show-gallery .car1 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car2 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car3 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car4 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car5 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car6 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car7 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car8 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car9 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car10 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car11 :hover {
+  opacity: 0.7;
+}
+main .show-gallery .car12 :hover {
+  opacity: 0.7;
+}
+
+/* testimonials */
+
+.testimonial-header {
+  margin-left: 3rem;
+  font-family: "lato";
+  font-size: 1.2rem;
+}
+
+.testimonials {
+  width: 800px;
+  margin: 100px auto;
+  background-color: #087f5b;
+  /* padding: 32px; */
+  /* padding-left: 86px; */
+  /* padding-right: 48px; */
+  padding: 32px 48px 32px 86px;
+
+  border-radius: 8px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+.testimonials img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #c3fae8;
+}
+
+.testimonial-job {
+  font-size: 12px;
+  color: #c3fae8;
+}
+
+/* CONTROLS */
+.btn {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  /* In relation to PARENTE ELEMENT */
+  left: 0;
+  top: 50%;
+
+  /* In relation to ELEMENT ITSELF */
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 24px;
+  width: 24px;
+  stroke: #087f5b;
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 32px);
+
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 2px solid #087f5b;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #087f5b;
+}
+
+/* main #contact-area {
+  margin: 3rem;
+}
+main #contact-area h2 {
+  font-family: "lato";
+  font-size: 2rem;
+  margin-left: 1rem;
+} */
