@@ -206,7 +206,7 @@ main .show-gallery .car12 :hover {
 .testimonials {
   width: 800px;
   margin: 100px auto;
-  background-color: #087f5b;
+  background-color: #868e96;
   /* padding: 32px; */
   /* padding-left: 86px; */
   /* padding-right: 48px; */
@@ -281,7 +281,7 @@ main .show-gallery .car12 :hover {
 .btn-icon {
   height: 24px;
   width: 24px;
-  stroke: #087f5b;
+  stroke: #868e96;
 }
 .dots {
   position: absolute;
@@ -297,20 +297,66 @@ main .show-gallery .car12 :hover {
   height: 12px;
   width: 12px;
   background-color: #fff;
-  border: 2px solid #087f5b;
+  border: 2px solid #868e96;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .dot--fill {
-  background-color: #087f5b;
+  background-color: #333;
 }
 
-/* main #contact-area {
-  margin: 3rem;
+footer .main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
-main #contact-area h2 {
-  font-family: "lato";
-  font-size: 2rem;
-  margin-left: 1rem;
-} */
+
+.footer-first h2 {
+  margin-top: 16rem;
+  color: #ced4da;
+}
+
+.footer-second {
+  line-height: 4;
+  text-align: left;
+}
+
+.footer-third {
+  line-height: 4;
+  text-align: left;
+}
+
+/* callback form */
+
+.callback-form {
+  width: 18%;
+  margin-top: -1rem;
+}
+
+.callback-form label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.callback-form .form-control {
+  margin-bottom: 10px;
+}
+
+.callback-form input:focus {
+  outline-color: #868e96;
+}
+
+.callback-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form .btn-form {
+  padding: 12px 0;
+  margin-top: 20px;
+  background: #333;
+  color: #fff;
+}
