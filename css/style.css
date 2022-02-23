@@ -15,6 +15,7 @@ body {
   font-family: "raleway";
   font-size: 13px;
   line-height: 1.7;
+  /* overflow-x: hidden; */
 }
 
 header h1 {
@@ -51,10 +52,11 @@ header .showcase-nav ul {
   transition: all 0.5s ease-in;
 }
 
-header #showcase-area {
+#showcase-area {
   position: relative;
   background: url(../img/showcase\ page.jpg) no-repeat center center/cover;
   height: 100vh;
+  width: 100%;
   color: #fff;
 }
 
@@ -80,6 +82,7 @@ header #showcase-area .social {
 
 .social i {
   color: #868e96;
+  position: fixed;
 }
 .socials i:hover {
   background: #868e96;
@@ -92,15 +95,15 @@ header .showcase-main {
   line-height: 1.2;
 }
 
-header .info-box {
+#info-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
   position: inherit;
-  margin-top: 22.4rem;
   background: white;
   color: #333;
   line-height: 1.8;
+  margin-top: 415px;
   padding: 2rem;
   margin-right: 17rem;
   text-align: left;
@@ -113,6 +116,7 @@ header .info-box h3 {
 section #about-box {
   margin: 3rem;
   display: grid;
+  margin-top: 7rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -312,6 +316,12 @@ footer .main-footer {
   margin: 1rem;
 }
 
+/* @media (max-width: 1267px) {
+  .main-footer {
+    background: red;
+  }
+} */
+
 .footer-first h2 {
   margin-top: 16rem;
   color: #ced4da;
@@ -359,4 +369,334 @@ footer .main-footer {
   margin-top: 20px;
   background: #333;
   color: #fff;
+}
+
+/* media queries */
+
+@media (max-width: 2480px) {
+  .social {
+    display: none;
+  }
+}
+@media (max-width: 318px) {
+  header #showcase-nav {
+  }
+  .showcase-nav h1 {
+    display: none;
+  }
+  .showcase-nav ul {
+    display: block;
+  }
+
+  header .showcase-main h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  header #info-box {
+    display: none;
+  }
+  .testimonial-header {
+    display: none;
+  }
+  section #about-box {
+    display: block;
+    padding: 2rem;
+  }
+  #Testimonials {
+    display: none;
+  }
+
+  footer .main-footer {
+    display: block;
+    padding: 2rem;
+  }
+  main .show-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  section .about-box1 {
+    margin-bottom: 0;
+  }
+
+  section .about-box2 {
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .footer-second {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+  .footer-third {
+    padding-top: 2rem;
+  }
+  .callback-form {
+    padding-top: 2rem;
+  }
+
+  section .p-box {
+    display: none;
+  }
+}
+
+@media (max-width: 618px) {
+  .showcase-nav h1 {
+    display: none;
+  }
+  .showcase-nav ul {
+    display: block;
+  }
+
+  header .showcase-main h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  header #info-box {
+    display: none;
+  }
+  .testimonial-header {
+    display: none;
+  }
+  section #about-box {
+    display: block;
+    padding: 2rem;
+  }
+  #Testimonials {
+    display: none;
+  }
+
+  footer .main-footer {
+    display: block;
+    padding: 2rem;
+  }
+  main .show-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  section .about-box1 {
+    margin-bottom: 0;
+  }
+
+  section .about-box2 {
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .footer-second {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+  .footer-third {
+    padding-top: 2rem;
+  }
+  .callback-form {
+    padding-top: 2rem;
+  }
+
+  section .p-box {
+    display: none;
+  }
+}
+@media (max-width: 444px) {
+  .showcase-nav h1 {
+    display: none;
+  }
+  .showcase-nav ul {
+    display: block;
+  }
+
+  .showcase-main h1 {
+    text-align: center;
+    font-size: 1.9rem;
+  }
+
+  header #info-box {
+    display: none;
+  }
+  .testimonial-header {
+    display: none;
+  }
+  section #about-box {
+    display: block;
+    padding: 2rem;
+  }
+  #Testimonials {
+    display: none;
+  }
+
+  footer .main-footer {
+    display: block;
+    padding: 2rem;
+  }
+  main .show-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  section .about-box1 {
+    margin-bottom: 0;
+  }
+
+  section .about-box2 {
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .footer-second {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+  .footer-third {
+    padding-top: 2rem;
+  }
+  .callback-form {
+    padding-top: 2rem;
+  }
+
+  section .p-box {
+    display: none;
+  }
+}
+@media (max-width: 577px) {
+  .showcase-nav h1 {
+    display: none;
+  }
+
+  #showcase-area {
+    width: 570px;
+  }
+
+  #showcase-area ul {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+  #showcase-area li {
+    padding: 2rem;
+  }
+
+  .showcase-main h1 {
+    text-align: center;
+    font-size: 1.9rem;
+  }
+
+  header #info-box {
+    display: none;
+  }
+  .testimonial-header {
+    display: none;
+  }
+  section #about-box {
+    display: block;
+    padding: 2rem;
+  }
+  #Testimonials {
+    display: none;
+  }
+
+  footer .main-footer {
+    display: block;
+    padding: 2rem;
+  }
+  main .show-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  section .about-box1 {
+    margin-bottom: 0;
+  }
+
+  section .about-box2 {
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .footer-second {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+  .footer-third {
+    padding-top: 2rem;
+  }
+  .callback-form {
+    padding-top: 2rem;
+  }
+
+  section .p-box {
+    display: none;
+  }
+}
+
+@media (max-width: 776px) {
+  .showcase-nav h1 {
+    display: none;
+  }
+  .showcase-nav ul {
+    display: block;
+  }
+
+  header .showcase-main h1 {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  .testimonial-header {
+    display: none;
+  }
+  section #about-box {
+    display: block;
+    padding: 2rem;
+  }
+  #Testimonials {
+    display: none;
+  }
+
+  footer .main-footer {
+    display: block;
+    padding: 2rem;
+  }
+  main .show-gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  section .about-box1 {
+    margin-bottom: 0;
+  }
+
+  section .about-box2 {
+    margin-top: 2rem;
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .footer-second {
+    padding-top: 2rem;
+    font-size: 1rem;
+  }
+  .footer-third {
+    padding-top: 2rem;
+  }
+  .callback-form {
+    padding-top: 2rem;
+  }
+
+  section .p-box {
+    display: none;
+  }
 }
