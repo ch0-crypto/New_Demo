@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "raleway";
   font-size: 13px;
