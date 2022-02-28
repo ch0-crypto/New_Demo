@@ -22,6 +22,16 @@ body {
   /* overflow-x: hidden; */
 }
 
+/* font-family: sans-serif;
+color: #333;
+line-height: 1.5;
+height: 100vh;
+position: relative;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+background: linear-gradient(to top left, #28b487, #7dd56f); */
+
 header h1 {
   font-family: "lato";
 }
@@ -165,42 +175,180 @@ main .show-gallery {
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* hidden */
+
+main .hidden {
+  display: none;
+}
+
 /* gallery cars */
-main .show-gallery .car1 :hover {
-  opacity: 0.7;
+main .show-gallery .car1 {
+  position: relative;
 }
-main .show-gallery .car2 :hover {
-  opacity: 0.7;
+/* overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
-main .show-gallery .car3 :hover {
-  opacity: 0.7;
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car4 :hover {
-  opacity: 0.7;
+.close-modal1 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car5 :hover {
-  opacity: 0.7;
+.close-modal2 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car6 :hover {
-  opacity: 0.7;
+.close-modal3 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car7 :hover {
-  opacity: 0.7;
+.close-modal4 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car8 :hover {
-  opacity: 0.7;
+.close-modal5 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car9 :hover {
-  opacity: 0.7;
+.close-modal6 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car10 :hover {
-  opacity: 0.7;
+.close-modal7 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car11 :hover {
-  opacity: 0.7;
+.close-modal8 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
-main .show-gallery .car12 :hover {
-  opacity: 0.7;
+.close-modal9 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.close-modal10 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.close-modal11 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+main .show-gallery .car2 {
+  position: relative;
+}
+main .show-gallery .car3 {
+  position: relative;
+}
+main .show-gallery .car4 {
+  position: relative;
+}
+main .show-gallery .car5 {
+  position: relative;
+}
+main .show-gallery .car6 {
+  position: relative;
+}
+main .show-gallery .car7 {
+  position: relative;
+}
+main .show-gallery .car8 {
+  position: relative;
+}
+main .show-gallery .car9 {
+  position: relative;
+}
+main .show-gallery .car10 {
+  position: relative;
+}
+main .show-gallery .car11 {
+  position: relative;
+}
+main .show-gallery .car12 {
+  position: relative;
 }
 
 /* testimonials */
@@ -373,6 +521,198 @@ footer .main-footer {
   margin-top: 20px;
   background: #333;
   color: #fff;
+}
+.modal-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-left: 4rem;
+  opacity: 0.9;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.9;
+  font-weight: bolder;
+  display: block;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-right: 5rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-left: 4rem;
+  opacity: 0.9;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  opacity: 0.9;
+  font-weight: bolder;
+  margin-left: 4rem;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-12 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-left: 4rem;
+  opacity: 0.9;
+  font-weight: bolder;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 /* media queries */
