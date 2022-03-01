@@ -150,3 +150,16 @@ theTwelve.addEventListener("click", function () {
   twelve.classList.add("hidden");
   console.log("clicked");
 });
+
+const btn = document.getElementsByClassName("btn");
+const slide = document.getElementById("slide");
+
+btn[0].onclick = function () {
+  slide.style.transform = "translateX(0px)";
+};
+btn[1].onclick = function () {
+  slide.style.transform = "translateX(-800px)";
+};
+btn[2].onclick = function () {
+  slide.style.transform = "translateX(-1600px)";
+};
